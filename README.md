@@ -1,8 +1,24 @@
-# Welcome to your Expo app 👋
+# Pokédex App 🚀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native Pokémon app built with [Expo](https://expo.dev) to practice mobile app development. This app fetches Pokémon data from the [PokéAPI](https://pokeapi.co/) and displays a list of Pokémon with their details.
 
-## Get started
+## Features
+
+- Browse the first 10 Pokémon
+- View Pokémon front and back sprites
+- Display Pokémon type with color-coded backgrounds
+- Navigate to detailed view for each Pokémon
+- File-based routing with Expo Router
+
+## Tech Stack
+
+- **React Native** - Cross-platform mobile framework
+- **Expo** - Development platform and runtime
+- **TypeScript** - Type safety
+- **Expo Router** - Navigation and routing
+- **PokéAPI** - Pokémon data source
+
+## Getting Started
 
 1. Install dependencies
 
@@ -16,35 +32,32 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Open the app using one of these options:
+   - [Expo Go](https://expo.dev/go) on your mobile device
+   - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+   - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+app/
+├── index.tsx       - Home screen with Pokémon list
+├── details.tsx     - Individual Pokémon details
+└── _layout.tsx     - Navigation layout
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Learning Outcomes
 
-## Learn more
+This project demonstrates:
+- Fetching data from REST APIs
+- Managing state with React hooks
+- Parallel data fetching with `Promise.all()`
+- TypeScript interfaces for type safety
+- React Native styling and layouts
+- Navigation between screens
 
-To learn more about developing your project with Expo, look at the following resources:
+## Resources
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Docs](https://reactnative.dev/)
+- [PokéAPI Documentation](https://pokeapi.co/docs/v2)
